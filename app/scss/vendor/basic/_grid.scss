@@ -1,0 +1,43 @@
+.row{
+   
+   &::after{
+      content: "";
+      clear: both;
+      display: table;
+   }
+   &--gutters{
+      margin-right: -25px;
+   }
+   &--gutters > div{
+      padding-right: 25px;
+      overflow: hidden;
+   }
+}
+
+.bmum {
+   margin-bottom: 1rem;
+}
+@add-mixin medium{
+   .md-4-column{
+      .bmum {
+         margin-bottom: 0;
+      }
+      width: 33.33%;
+      float: left;
+
+      &--large{
+         width: 37%
+      }
+
+   }
+   .md-8-column{
+      width: 66.66%;
+      float: left;
+
+      &--small{
+         width: 63%;
+      }
+   }
+}
+
+

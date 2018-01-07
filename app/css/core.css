@@ -450,14 +450,6 @@ template {
   display: none;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #333; }
-
-img {
-  max-width: 100%;
-  height: auto; }
-
 .btn {
   background-color: #2f5572;
   color: #fff;
@@ -525,11 +517,28 @@ img {
 
 .wrapper {
   padding: 0 18px;
-  max-width: 1200px;
+  max-width: 1236px;
   margin: 0 auto; }
 
+.wrapper--medium {
+    max-width: 970px; }
+
+.wrapper--b-margin {
+    margin-bottom: 1rem; }
+
+@media (min-width: 35.5em) {
+  .wrapper--b-margin {
+    margin-bottom: 3.875rem; } }
+
+.wrapper .wrapper {
+    padding: 0; }
+
 .page-section {
-  padding: 4.5rem 0; }
+  padding: 1.2rem 0; }
+
+@media (min-width: 48em) {
+  .page-section {
+    padding: 4.5rem 0; } }
 
 .page-section--blue {
     background-color: #2f5572;
@@ -537,8 +546,12 @@ img {
 
 .headline {
   font-size: 300;
-  font-size: 2.875rem;
+  font-size: 1.9rem;
   color: #2f5572; }
+
+@media (min-width: 35.5em) {
+  .headline {
+    font-size: 2.875rem; } }
 
 .headline--centered {
     text-align: center; }
@@ -547,7 +560,11 @@ img {
     color: #d59541; }
 
 .headline--small {
-    font-size: 1.875rem; }
+    font-size: 1.5rem; }
+
+@media (min-width: 35.5em) {
+  .headline--small {
+    font-size: 1.875rem; } }
 
 .headline--narrow {
     max-width: 500px;
@@ -561,3 +578,61 @@ img {
 
 .headline--b-margin-large {
     margin-bottom: 1.6em; }
+
+.headline--no-t-margin {
+    margin-top: 0; }
+
+.generic-content-container p {
+  line-height: 1.65;
+  margin: 1.8rem 0; }
+
+@media (min-width: 35.5em) {
+  .generic-content-container p {
+    font-size: 1.125rem; } }
+
+.generic-content-container p a {
+  font-weight: 700; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  color: #d59541; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.row--gutters {
+  margin-right: -25px; }
+
+.row--gutters > div {
+  padding-right: 25px;
+  overflow: hidden; }
+
+.bmum {
+  margin-bottom: 1rem; }
+
+@media (min-width: 48em) {
+  .md-4-column {
+    width: 33.33%;
+    float: left; }
+    .md-4-column .bmum {
+      margin-bottom: 0; }
+    .md-4-column--large {
+      width: 37%; }
+  .md-8-column {
+    width: 66.66%;
+    float: left; }
+    .md-8-column--small {
+      width: 63%; } }
