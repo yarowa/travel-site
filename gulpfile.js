@@ -10,9 +10,9 @@ const gulp           =   require('gulp'),
       browserSync    =   require('browser-sync').create();
 
 var paths = {
-   home:  './*.html',
-   scss: './app/scss/**/*.scss',
-   scrpt: './app/assets/js/*.js'
+   home:  "./*.html",
+   scss: "./app/scss/**/*.scss",
+   scrpt: "./app/assets/js/*.js"
 }
 gulp.task('clean', function () {
    return del(['build']);
