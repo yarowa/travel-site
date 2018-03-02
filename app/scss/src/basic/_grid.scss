@@ -8,8 +8,16 @@
    &--gutters{
       margin-right: -25px;
    }
+   &--gutters-large{
+      margin-right: -65px;
+   }
    &--gutters > div{
       padding-right: 25px;
+      overflow: hidden;
+   }
+
+   &--gutters-large > div{
+      padding-right: 65px;
       overflow: hidden;
    }
 }
@@ -37,6 +45,10 @@
       &--small{
          width: 63%;
       }
+   }
+   .md-6-column{
+      width: 50%;
+      float: left;
    }
 }
 

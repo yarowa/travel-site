@@ -1,10 +1,10 @@
 const gulp           =   require('gulp'),
       sass           =   require('gulp-sass'),
       postcss        =   require('gulp-postcss'),
-      mixins         =   require('postcss-mixins')
+      mixins         =   require('postcss-mixins'),
       cssvars        =   require('postcss-simple-vars'),  
       autoprefixer   =   require('autoprefixer'),
-      cssImort       =   require('postcss-import'),
+      cssImport       =   require('postcss-import'),
       nested         =   require('postcss-nested'),
       del            =   require('del'),
       browserSync    =   require('browser-sync').create();
@@ -13,10 +13,10 @@ var paths = {
    home:  "./*.html",
    scss: "./app/scss/**/*.scss",
    scrpt: "./app/assets/js/*.js"
-}
+};
 gulp.task('clean', function () {
    return del(['build']);
-})
+});
 ///Compile Sass and inject to browser
 gulp.task('sass', ['clean'], function () {
    return gulp.src(paths.scss)
@@ -24,7 +24,7 @@ gulp.task('sass', ['clean'], function () {
                   console.log(err.toString());
                   this.emit('end');
                }))
-               .pipe(postcss([cssImort, autoprefixer, mixins, cssvars, nested]))
+               .pipe(postcss([cssImport, autoprefixer, mixins, cssvars, nested]))
                .pipe(gulp.dest('./app/css'))
                .pipe(browserSync.stream());
 });

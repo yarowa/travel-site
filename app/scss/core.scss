@@ -1,17 +1,19 @@
 @import 'normalize.css';
 
-@import 'vendor/vars/_vars';
-@import 'vendor/queries/_mixins';
+@import 'src/vars/_vars';
+@import 'src/queries/_mixins';
 
 
 
 
-@import 'vendor/modules/_buttons';
-@import 'vendor/modules/_large-hero';
-@import 'vendor/modules/_wrapper';
-@import 'vendor/modules/_page-section';
-@import 'vendor/modules/_headline';
-@import 'vendor/modules/_generic-content';
+@import 'src/modules/_buttons';
+@import 'src/modules/_large-hero';
+@import 'src/modules/_wrapper';
+@import 'src/modules/_page-section';
+@import 'src/modules/_headline';
+@import 'src/modules/_generic-content';
+@import 'src/modules/_section-title';
+@import 'src/modules/_feature-item';
 
-@import 'vendor/basic/_general';
-@import 'vendor/basic/_grid';
+@import 'src/basic/_general';
+@import 'src/basic/_grid';
