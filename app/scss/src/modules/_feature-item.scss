@@ -2,14 +2,14 @@
   position: relative;
   padding-bottom: 2.5rem;
 
-  @add-mixin small{
+  @add-mixin large{
     padding-left: 5.875rem;
   }
 
   &__icon{
     display: block;
     margin: 0 auto;
-    @add-mixin small{
+    @add-mixin large{
       position: absolute;
       left: 0;
     }
@@ -22,7 +22,7 @@
     margin-bottom: .8rem;
     text-align: center;
 
-    @add-mixin small{
+    @add-mixin large{
       text-align: left;
       margin-top: 1em;
       font-size: 1.875rem;

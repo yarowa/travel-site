@@ -4,16 +4,34 @@
       content: "";
       clear: both;
       display: table;
+
+
    }
-   &--gutters{
+
+  &--t-padding{
+    padding-top: 80px;
+  }
+   &--gutters, &--gutters-medium{
       margin-right: -25px;
+     @add-mixin medium{
+       display: flex;
+     }
+
+
+     & > div {
+       float: none;
+       display: flex;
+     }
    }
    &--gutters-large{
       margin-right: -65px;
+     @add-mixin large{
+       display: flex;
+     }
    }
    &--gutters > div{
       padding-right: 25px;
-      overflow: hidden;
+      //overflow: hidden;
    }
 
    &--gutters-large > div{
@@ -50,6 +68,33 @@
       width: 50%;
       float: left;
    }
+}
+
+@add-mixin large{
+  .lg-4-column{
+    .bmum {
+      margin-bottom: 0;
+    }
+    width: 33.33%;
+    float: left;
+
+    &--large{
+      width: 37%
+    }
+
+  }
+  .lg-8-column{
+    width: 66.66%;
+    float: left;
+
+    &--small{
+      width: 63%;
+    }
+  }
+  .lg-6-column{
+    width: 50%;
+    float: left;
+  }
 }
 
 

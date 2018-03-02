@@ -1,10 +1,25 @@
 .wrapper{
-   padding: 0 18px;
+  overflow: hidden;
+   padding-left:  18px;
+   padding-right:  18px;
    max-width: 1236px;
    margin: 0 auto;
    &--medium{
       max-width: 970px;
    }
+
+  &--no-padding-medium{
+    padding-left:  0;
+    padding-right:  0;
+    @add-mixin medium{
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+    @add-mixin large{
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
    &--b-margin{
       margin-bottom: 1rem;
       @add-mixin small{
@@ -13,6 +28,9 @@
 
    }
    .wrapper{
-      padding: 0;
+      padding-left: 0;
+     padding-right: 0;
    }
+
+
 }

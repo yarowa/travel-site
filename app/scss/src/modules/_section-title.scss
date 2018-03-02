@@ -9,12 +9,17 @@
   strong{
     font-weight: 500;
   }
+  &__blue{
+    color: $mainBlue;
+  }
   &__icon{
     display: block;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: .6rem;
     @add-mixin small{
+      position: relative;
+      top: 10px;
       margin-right: .5rem;
       margin-left: 0;
       margin-bottom: 0;
