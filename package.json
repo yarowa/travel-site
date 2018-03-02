@@ -5,18 +5,19 @@
     "start": "gulp"
   },
   "dependencies": {
-    "jquery": "^3.2.1",
-    "normalize.css": "^7.0.0"
+    "jquery": "^3.3.1",
+    "normalize.css": "^7.0.0",
+    "npm": "^5.7.1"
   },
   "devDependencies": {
-    "autoprefixer": "^7.2.3",
-    "browser-sync": "^2.18.13",
+    "autoprefixer": "^7.2.6",
+    "browser-sync": "^2.23.6",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-postcss": "^7.0.0",
+    "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "postcss-import": "^11.0.0",
+    "postcss-import": "^11.1.0",
     "postcss-mixins": "^6.2.0",
     "postcss-nested": "^3.0.0",
     "postcss-simple-media-queries": "^1.0.1",
