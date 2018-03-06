@@ -1,12 +1,9 @@
 .row{
    
-   &::after{
-      content: "";
-      clear: both;
-      display: table;
+
+    @include clearfix;
 
 
-   }
 
   &--t-padding{
     padding-top: 80px;
