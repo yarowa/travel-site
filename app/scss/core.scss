@@ -2,6 +2,7 @@
 
 @import 'src/vars/_vars';
 @import 'src/queries/_mixins';
+@import "src/sprite/_sprite";
 
 
 
@@ -18,8 +19,10 @@
 @import 'src/modules/_header';
 @import 'src/modules/_primary-nav';
 @import 'src/modules/_footer';
+@import 'src/modules/_social-icons';
 
 @import 'src/modules/_reveal-item';
+@import 'src/modules/_modal';
 
 
 @import 'src/basic/_general';
