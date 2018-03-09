@@ -920,7 +920,9 @@ template {
     font-size: 1rem;
     background-color: transparent;
     border-radius: 0;
-    border: 1px solid transparent; } }
+    border: 1px solid transparent; }
+    .primary-nav a.current-link {
+      color: #fabb69; } }
 
 .site-footer {
   background-color: #2f5572;

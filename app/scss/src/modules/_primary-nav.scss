@@ -39,12 +39,17 @@
     border: 1px solid $mainBlue;
     font-size: .8rem;
     background-color: rgba($mainBlue, .7);
+
     @add-mixin medium {
       padding: 12px 0;
       font-size: 1rem;
       background-color: transparent;
       border-radius: 0;
       border: 1px solid transparent;
+
+      &.current-link{
+        color: #fabb69;
+      }
     }
   }
 }
