@@ -735,7 +735,10 @@ template {
 
 @media (min-width: 49em) {
   .site-header {
-    background-color: rgba(47, 85, 114, 0.3); } }
+    position: fixed;
+    background-color: rgba(47, 85, 114, 0.3); }
+    .site-header--dark {
+      background-color: rgba(23, 51, 72, 0.85); } }
 
 .site-header--expanded {
     background-color: rgba(47, 85, 114, 0.55); }
@@ -844,13 +847,20 @@ template {
     -webkit-transform-origin: 50% 0;
             transform-origin: 50% 0;
     background-color: #2f5572;
-    padding: 25px 36px; }
+    padding: 25px 36px;
+    -webkit-transition: -webkit-transform .4s ease-out;
+    transition: -webkit-transform .4s ease-out;
+    transition: transform .4s ease-out;
+    transition: transform .4s ease-out, -webkit-transform .4s ease-out; }
 
 @media (min-width: 49em) {
   .site-header__logo {
     left: auto;
     -webkit-transform: translateX(0);
-            transform: translateX(0); } }
+            transform: translateX(0); }
+    .site-header--dark .site-header__logo {
+      -webkit-transform: scale(0.56);
+              transform: scale(0.56); } }
 
 @media (min-width: 49em) {
   .site-header__btn-container {

@@ -5,7 +5,11 @@
   z-index: 2;
   transition: background-color .3s ease-out;
   @add-mixin medium {
+    position: fixed;
     background-color: rgba($mainBlue, .3);
+    &--dark{
+      background-color: rgba(23, 51, 72, .85);
+    }
   }
 
   &--expanded{
@@ -109,10 +113,14 @@
     transform-origin: 50% 0;
     background-color: $mainBlue;
     padding: 25px 36px;
+    transition: transform .4s ease-out;
 
     @add-mixin medium {
       left: auto;
       transform: translateX(0);
+      .site-header--dark & {
+        transform: scale(.56);
+      }
     }
 
   }
